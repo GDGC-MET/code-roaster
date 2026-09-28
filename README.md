@@ -66,7 +66,7 @@ The repository includes a comprehensive design system specification in `prompts/
 2. Run the following prompt:
 
 ```text
-using this skill, generate a wireframe for me inside of google stitch using its mcp
+using this skill, generate a wireframe for me inside of google stitch using its mcp. Make sure to use the assests from the assest folders for logos and svgs
 ```
 
 3. **What happens**:
@@ -85,7 +85,7 @@ Now convert the wireframe and specifications into a full-stack Next.js project u
 2. Run the following prompt:
 
 ```text
-using this context, create the project and use our generated wireframe as the main design. You can also extract its code from stitch as the reference for your code
+using this context, create the project and use our generated wireframe that we just built as the main design. You can also extract its code from stitch as the reference for your code
 ```
 
 3. **What happens**:
@@ -169,6 +169,7 @@ initialize a git repository here and commit + push the changes to this remote ht
    git add .
    git commit -m "feat: complete Code Roaster Desi Edition with Stitch & Gemini"
    git branch -M main
+   git remote remove origin
    git remote add origin https://github.com/<YOUR_USERNAME_OR_ORG>/code-roaster.git
    git push -u origin main
    ```
