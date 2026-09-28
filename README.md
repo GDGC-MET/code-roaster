@@ -4,67 +4,7 @@
 > Built with **Google Antigravity 2.0**, **Google Stitch MCP**, **Gemini 3.5 Flash**, **Next.js 15 App Router**, and **Tailwind CSS v4**.  
 > Specially crafted for **GDG on Campus MET** & **Pre-DevFest Nashik 2026**.
 
----
-
-## 📌 Table of Contents
-
-- [Overview](#-overview)
-- [Tech Stack & Architecture](#-tech-stack--architecture)
-- [Prerequisites](#-prerequisites)
-- [Step-by-Step Workshop Guide](#-step-by-step-workshop-guide)
-  - [Step 1: Install Antigravity 2.0 IDE & Get Google Stitch API Key](#step-1-install-antigravity-20-ide--get-google-stitch-api-key)
-  - [Step 2: Install Google Stitch MCP in Antigravity](#step-2-install-google-stitch-mcp-in-antigravity)
-  - [Step 3: Generate the Wireframe with Stitch MCP](#step-3-generate-the-wireframe-with-stitch-mcp)
-  - [Step 4: Build the Full Next.js Web App with Antigravity](#step-4-build-the-full-nextjs-web-app-with-antigravity)
-  - [Step 5: Configure Gemini API Key (`.env.local`)](#step-5-configure-gemini-api-key-envlocal)
-  - [Step 6: Create a New GitHub Repository](#step-6-create-a-new-github-repository)
-  - [Step 7: Run Locally & Push to GitHub via Antigravity](#step-7-run-locally--push-to-github-via-antigravity)
-  - [Step 8: Deploy to Vercel](#step-8-deploy-to-vercel)
-- [Repository Structure](#-repository-structure)
-- [Troubleshooting & Tips](#-troubleshooting--tips)
-- [Community & Credits](#-community--credits)
-
----
-
-## 🚀 Overview
-
-**Code Roaster (Desi Edition)** pairs real issue detection and technical code auditing with humorous, punchy Indian-dev commentary (Hinglish/Marathi slang + spicy developer relatable metaphors).
-
-Unlike generic AI linters whose dry output gets ignored, Code Roaster:
-1. **Roasts Your Code**: Delivers critique at 3 intensity levels (**Dry**, **Sharp**, **Savage**).
-2. **Flags Specific Bugs**: Classifies issues into `FATAL BUG`, `CODE SMELL`, and `OPTIMIZATION`.
-3. **Hands You the Fix**: Supplies clean, corrected code with 1-click **Apply to Editor** and **Copy to Clipboard**.
-4. **Highlights Hotspots**: Points straight to offending lines inside an integrated retro-brutalist editor.
-
----
-
-## 🛠️ Tech Stack & Architecture
-
-- **Agentic IDE**: Google Antigravity 2.0
-- **Design & Wireframing Engine**: Google Stitch MCP
-- **Framework**: Next.js 15 (App Router, Server Actions / Route Handlers)
-- **UI & Components**: React 19 + TypeScript
-- **Styling**: Tailwind CSS v4 (Neo-brutalist technical drafting aesthetics, Warli geometric accents, Space Grotesk + JetBrains Mono fonts)
-- **AI Intelligence**: Google Gemini API via official `@google/genai` SDK (`gemini-3.5-flash-lite`)
-- **Deployment**: Vercel
-
-```
-┌────────────────────────────────────────────────────────┐
-│                   Google Antigravity 2.0               │
-│                                                        │
-│  [Prompts] ─────────► [Stitch MCP] ─────► Wireframe    │
-│  - designGDGmain.md        │                           │
-│  - build-prompt.md         ▼                           │
-│                     [Next.js App]                      │
-│                            │                           │
-│                            ▼                           │
-│                   [Gemini 3.5 Flash]                   │
-│               (Hinglish Roasts + Fixes)                │
-└────────────────────────────┬───────────────────────────┘
-                             │
-                             ▼
-                    [GitHub] ──► [Vercel]
-```
+**Code Roaster (Desi Edition)** pairs technical code review with humorous, punchy Indian-dev commentary (Hinglish/Marathi slang + spicy developer metaphors). It detects real bugs, classifies them into `FATAL BUG`, `CODE SMELL`, and `OPTIMIZATION`, delivers a comedic critique across 3 intensity levels (**Dry**, **Sharp**, **Savage**), and gives you clean, corrected code with 1-click **Apply to Editor**.
 
 ---
 
@@ -79,7 +19,7 @@ Before starting, ensure you have:
 
 ---
 
-## 📖 Step-by-Step Workshop Guide
+## 📖 Step-by-Step Workshop Instructions
 
 ### Step 1: Install Antigravity 2.0 IDE & Get Google Stitch API Key
 
@@ -98,7 +38,7 @@ Before starting, ensure you have:
 
 Antigravity connects directly to Model Context Protocol (MCP) servers to interact with external tools like Stitch.
 
-1. In Antigravity, open the **MCP Servers** panel (`Settings` -> `MCP Servers` or the MCP icon in the activity bar).
+1. In Antigravity, open the **MCP Servers** panel (`Settings` -> `MCP Servers` or click the MCP icon in the activity bar).
 2. Locate or add **Google Stitch MCP** (`StitchMCP`).
 3. Add your **Stitch API Key** in the configuration settings:
    ```json
@@ -130,7 +70,7 @@ using this skill, generate a wireframe for me inside of google stitch using its 
 ```
 
 3. **What happens**:
-   - Antigravity will call the Stitch MCP tools (`create_project`, `create_design_system`, `generate_screen_from_text`).
+   - Antigravity calls the Stitch MCP tools (`create_project`, `create_design_system`, `generate_screen_from_text`).
    - It creates a dedicated project and generates the high-fidelity wireframe screen inside Stitch.
    - Wait until Stitch returns the completed screen URL and visual preview.
 
@@ -249,6 +189,36 @@ initialize a git repository here and commit + push the changes to this remote ht
    - Click **Add**.
 6. Click **Deploy**.
 7. In under a minute, your spicy Code Roaster app is live on a `.vercel.app` URL! 🎉
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Agentic IDE**: Google Antigravity 2.0
+- **Design & Wireframing Engine**: Google Stitch MCP
+- **Framework**: Next.js 15 (App Router, Server Actions / Route Handlers)
+- **UI & Components**: React 19 + TypeScript
+- **Styling**: Tailwind CSS v4 (Neo-brutalist technical drafting aesthetics, Warli geometric accents, Space Grotesk + JetBrains Mono fonts)
+- **AI Intelligence**: Google Gemini API via official `@google/genai` SDK (`gemini-3.5-flash-lite`)
+- **Deployment**: Vercel
+
+```
+┌────────────────────────────────────────────────────────┐
+│                   Google Antigravity 2.0               │
+│                                                        │
+│  [Prompts] ─────────► [Stitch MCP] ─────► Wireframe    │
+│  - designGDGmain.md        │                           │
+│  - build-prompt.md         ▼                           │
+│                     [Next.js App]                      │
+│                            │                           │
+│                            ▼                           │
+│                   [Gemini 3.5 Flash]                   │
+│               (Hinglish Roasts + Fixes)                │
+└────────────────────────────┬───────────────────────────┘
+                             │
+                             ▼
+                    [GitHub] ──► [Vercel]
+```
 
 ---
 
